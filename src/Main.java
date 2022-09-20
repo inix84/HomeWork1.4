@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        for (int i=7; i<=98; i+=7) {
+        for (int i=1; i<=512; i*=2) {
             System.out.print(i + " ");
         }
 
