@@ -1,7 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        for (int i=1; i<=512; i*=2) {
-            System.out.print(i + " ");
+        int savings=0;
+        for (int i=1; i<13; i++) {
+            savings+=29000;
+            System.out.println(i + " месяц, сумма накоплений равна " + savings + " рублей");
         }
 
 
