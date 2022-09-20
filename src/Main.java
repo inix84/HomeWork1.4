@@ -5,7 +5,7 @@ public class Main {
             savings+=29000;
             System.out.print(i + " месяц, сумма накоплений равна " + savings + " рублей, а ");
             savings+=savings/100;
-            System.out.println (savings + " - сумма с процентом. ");
+            System.out.println (savings + " -  сумма с процентом. ");
         }
 
 
