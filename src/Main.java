@@ -1,10 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        int friday=2;
-        int dayMonth=31;
-        for (int i=1; i<=dayMonth;i++) {
-        if (i%7==friday) {
-            System.out.println("Сегодня пятница, "+i+"-е число. Необходимо подготовить отчет.") ;
+        int comet=79;
+        int year100=100;
+        int year200=200;
+        int year2022=2022;
+        for (int i=1; i<=(year2022+year100);i++) {
+        if (i%comet==0 && i>(year2022-year200)) {
+            System.out.println(i) ;
         }
         }
 
