@@ -1,16 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        double y=12_000_000;
-        double birthRate= (double) 17/1000;
-        double mortaliti=(double) 8/1000;
-        System.out.println (" " + birthRate + " "+ mortaliti);
-        int i=0;
-        while (i<10) {
-            y= (y+(y*birthRate)-(y*mortaliti));
-            i++;
-            System.out.println ("Год " + i + ", численность населения составляет  "+ (int) y);
+        int savings=15000;
+        int AmountLimit=12_000_000;
+        int month=0;
+        double percent= 1.07;
+        //System.out.println("Процент " + percent);
+        while (savings<AmountLimit) {
+            month++;
+            savings*=percent;
+            System.out.println("Месяц " + month +", сумма накоплений = "+ savings+" рублей");
+
         }
-
-
+        int month1=month/12;
+        double month2=month%12;
+        System.out.println("Что составит " + month1 +" лет и "+ (int) month2 +" месяца");
     }
 }
