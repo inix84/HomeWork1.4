@@ -4,8 +4,8 @@ public class Main {
         double birthRate= (double) 17/1000;
         double mortaliti=(double) 8/1000;
         System.out.println (" " + birthRate + " "+ mortaliti);
-        int i=2022;
-        while (i<=2032) {
+        int i=0;
+        while (i<10) {
             y= (y+(y*birthRate)-(y*mortaliti));
             i++;
             System.out.println ("Год " + i + ", численность населения составляет  "+ (int) y);
