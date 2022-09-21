@@ -1,12 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        int friday=7;
+        int friday=2;
         int dayMonth=31;
-        while (friday<=dayMonth) {
-            System.out.println("Сегодня пятница, "+friday+"-е число. Необходимо подготовить отчет.");
-            friday+=7;
-
-
+        for (int i=1; i<=dayMonth;i++) {
+        if (i%7==friday) {
+            System.out.println("Сегодня пятница, "+i+"-е число. Необходимо подготовить отчет.") ;
+        }
         }
 
     }
