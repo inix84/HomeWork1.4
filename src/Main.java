@@ -1,18 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        int savings=0;
-        int deferredAmount=15_000;
-        int AmountLimit=2_459_000;
-        int month=0;
-        while (savings<AmountLimit) {
-            month++;
-            savings+=deferredAmount;
-            savings*=1.01;
-           // System.out.println("Месяц " + month +", сумма накоплений = "+ savings+" рублей");
-
-
+        int i=1;
+        while (i<=10) {
+            System.out.print(i + " ");
+            i++;
+           }
+        System.out.println();
+        for (int j=10;j>=1;j--) {
+            System.out.print(j + " ");
         }
-        System.out.println("Месяц " + month +", сумма накоплений = "+ savings+" рублей");
+
 
     }
 }
