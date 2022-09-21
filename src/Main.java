@@ -1,9 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        for (int i=10; i >=1; i--) {
-            System.out.print(i + " ");
-        }
+        int multiplication=2;
+              for (int i=1; i<=10;i++) {
+            int meaning=i*multiplication;
+        System.out.println(multiplication + "*" + i + "=" + meaning) ;
 
+        }
 
     }
 }
