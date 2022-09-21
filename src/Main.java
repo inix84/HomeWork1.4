@@ -1,13 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        int i=1;
-        while (i<=10) {
-            System.out.print(i + " ");
+        double y=12_000_000;
+        double birthRate= (double) 17/1000;
+        double mortaliti=(double) 8/1000;
+        System.out.println (" " + birthRate + " "+ mortaliti);
+        int i=2022;
+        while (i<=2032) {
+            y= (y+(y*birthRate)-(y*mortaliti));
             i++;
-           }
-        System.out.println();
-        for (int j=10;j>=1;j--) {
-            System.out.print(j + " ");
+            System.out.println ("Год " + i + ", численность населения составляет  "+ (int) y);
         }
 
 
