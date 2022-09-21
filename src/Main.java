@@ -8,11 +8,14 @@ public class Main {
         while (savings<AmountLimit) {
             month++;
             savings*=percent;
-            System.out.println("Месяц " + month +", сумма накоплений = "+ savings+" рублей");
+            if (month%6==0) {
+                System.out.println("Месяц " + month +", сумма накоплений = "+ savings+" рублей");
+            }
 
         }
+        System.out.print("Для накопления до нужной суммы, понадобиться " + month +" месяцев");
         int month1=month/12;
         double month2=month%12;
-        System.out.println("Что составит " + month1 +" лет и "+ (int) month2 +" месяца");
+        System.out.print(", что составит " + month1 +" лет и "+ (int) month2 +" месяца.");
     }
 }
