@@ -1,13 +1,18 @@
 public class Main {
     public static void main(String[] args) {
         int savings=0;
-        for (int i=1; i<13; i++) {
-            savings+=29000;
-            System.out.print(i + " месяц, сумма накоплений равна " + savings + " рублей, а ");
-            savings+=savings/100;
-            System.out.println (savings + " -  сумма с процентом. ");
-        }
+        int deferredAmount=15_000;
+        int AmountLimit=2_459_000;
+        int month=0;
+        while (savings<AmountLimit) {
+            month++;
+            savings+=deferredAmount;
+            savings*=1.01;
+           // System.out.println("Месяц " + month +", сумма накоплений = "+ savings+" рублей");
 
+
+        }
+        System.out.println("Месяц " + month +", сумма накоплений = "+ savings+" рублей");
 
     }
 }
